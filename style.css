@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  overflow: hidden;
+  height: 100%;
+}
+
+body {
+  /* COLOR COMBOS FROM https://flatuicolors.com !!! */
+  /* background: linear-gradient(to bottom right, #43d151, #1492d1);
+  background-image: linear-gradient(to right bottom, #55c57acc, #28b485cc);
+  background-image: linear-gradient(to right bottom, #41b5b6, #0d4041);
+  background-image: linear-gradient(to right bottom, #fbdb89, #f48982);
+  background-image: linear-gradient(to right bottom, #ff3366, #ba265d);
+  background-image: linear-gradient(to right bottom, #ff7675, #fd79a8);
+  background-image: linear-gradient(to right bottom, #a29bfe, #6c5ce7);
+  background-image: linear-gradient(to right bottom, #636e72, #2d3436);
+  background: radial-gradient(ellipse at bottom, #240c27 0%, #090a0f 100%); */
+
+  /* LIGHTS AND DARKS */
+  background-color: #eee;
+  background-color: #292929;
+  background-color: #3c3c3c;
+  background-color: #202020;
+  background-color: #121212;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  font-family: Lato;
+  font-weight: 300;
+  font-size: 20px;
+  position: relative;
+  min-height: 100vh;
+  height: 100%;
+  overflow: auto;
+  background-color: #eee;
+}
+
+/* NAVBAR STYLING */
+.nav__navContainer {
+  width: 100%;
+  height: 6rem;
+  background-color: #0e0e0e;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  border-bottom: 1.5px solid rgb(31, 31, 31);
+  z-index: 1000;
+  align-items: center;
+  padding: 0 4rem;
+}
+
+.nav__navContainer ul {
+  display: flex;
+}
+
+.nav__navContainer li {
+  list-style: none;
+}
+
+.nav__navContainer a {
+  text-decoration: none;
+  color: white;
+  padding: 19px 20px;
+  transition: all 0.3s;
+}
+
+.nav__navContainer a:hover {
+  background-color: #252525;
+}
+
+.nav__navContainer input {
+  padding: 0.9rem 2rem;
+  border-radius: 3px;
+  width: 7.5%;
+  font-size: 16px;
+  background-color: #eee;
+  border: none;
+  transition: all 0.2s;
+}
+
+.nav__navContainer input:focus {
+  width: 25%;
+  outline: none;
+  background-color: #eee;
+}
+/* END OF NAVBAR STYLING */
+
+.grad {
+  height: 50vh;
+}
+
+.blue-grad {
+  background: linear-gradient(to bottom right, #43d151, #1492d1);
+}
+
+.green-grad {
+  background-image: linear-gradient(to right bottom, #55c57acc, #28b485cc);
+}
+
+.teal-grad {
+  background-image: linear-gradient(to right bottom, #41b5b6, #0d4041);
+}
+
+.orange-grad {
+  background-image: linear-gradient(to right bottom, #fbdb89, #f48982);
+}
+
+.pink-grad {
+  background-image: linear-gradient(to right bottom, #ff3366, #ba265d);
+}
+
+.pink2-grad {
+  background-image: linear-gradient(to right bottom, #ff7675, #fd79a8);
+}
+
+.purple-grad {
+  background-image: linear-gradient(to right bottom, #a29bfe, #6c5ce7);
+}
+
+.grey-grad {
+  background-image: linear-gradient(to right bottom, #636e72, #2d3436);
+}
+
+.violet-grad {
+  background: radial-gradient(ellipse at bottom, #240c27 0%, #090a0f 100%);
+}
+
+.flex-section {
+  display: flex;
+  height: 80vh;
+  color: black;
+}
+
+.left {
+  background-color: #fff;
+  flex: 0 0 60%;
+}
+
+.right {
+  background-image: linear-gradient(to right bottom, #636e72, #2d3436);
+  flex: 1;
+}
+
+.grid-section {
+  height: 100%;
+  background-color: #eee;
+  margin: 0 10rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 25px 15px;
+  margin-top: 30px;
+}
+
+.boxes {
+  background-image: linear-gradient(to right bottom, #41b5b6, #0d4041);
+  width: 350px;
+  height: 27rem;
+  font-size: 16px;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+  position: relative;
+}
