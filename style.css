@@ -19,6 +19,9 @@ html {
 
 body {
   /* COLOR COMBOS FROM https://flatuicolors.com !!! */
+
+  /* I like to put these in the body tag, but you can also use them anywhere, like buttons. */
+
   /* background: linear-gradient(to bottom right, #43d151, #1492d1);
   background-image: linear-gradient(to right bottom, #55c57acc, #28b485cc);
   background-image: linear-gradient(to right bottom, #41b5b6, #0d4041);
@@ -36,6 +39,7 @@ body {
   background-color: #202020;
   background-color: #121212;
   color: white;
+
   background-size: cover;
   background-position: center;
   font-family: Lato;
@@ -46,6 +50,12 @@ body {
   height: 100%;
   overflow: auto;
   background-color: #eee;
+}
+
+h1 {
+  color: black;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 /* NAVBAR STYLING */
@@ -98,6 +108,30 @@ body {
 }
 /* END OF NAVBAR STYLING */
 
+.main {
+  padding-top: 10rem;
+}
+
+section:not(.grad) {
+  padding: 10rem 0;
+}
+
+/* RESOURCES SECTION */
+
+.resources {
+  padding: 10rem 0;
+}
+
+.resources ul {
+  text-align: center;
+  color: black;
+}
+
+.resources li {
+  margin-bottom: 2.5rem;
+}
+
+/* GRADIENT SECTIONS */
 .grad {
   height: 50vh;
 }
@@ -138,7 +172,9 @@ body {
   background: radial-gradient(ellipse at bottom, #240c27 0%, #090a0f 100%);
 }
 
-.flex-section {
+/* FLEX SECTION */
+
+.flex-boxes {
   display: flex;
   height: 80vh;
   color: black;
@@ -154,10 +190,17 @@ body {
   flex: 1;
 }
 
+.flex-ex-img {
+  width: 100vw;
+}
+
+/* GRID SECTION */
+
 .grid-section {
   height: 100%;
   background-color: #eee;
-  margin: 0 10rem;
+  margin: 0 auto;
+  max-width: 1100px;
 }
 
 .grid-container {
@@ -173,6 +216,17 @@ body {
   height: 27rem;
   font-size: 16px;
   border-radius: 3px;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
   position: relative;
+}
+
+.footer {
+  background-color: black;
+  padding: 10rem 0;
+}
+
+.footer h2 {
+  color: white;
+  text-align: center;
+  line-height: 5rem;
 }
