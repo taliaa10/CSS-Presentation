@@ -180,6 +180,12 @@ section:not(.grad) {
   color: black;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .flex-boxes {
+    height: 30vh;
+  }
+}
+
 .left {
   background-color: #fff;
   flex: 0 0 60%;
@@ -208,6 +214,14 @@ section:not(.grad) {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 25px 15px;
   margin-top: 30px;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .grid-container {
+    grid-template-columns: 0;
+    width: 350px;
+    margin: 3rem auto 0;
+  }
 }
 
 .boxes {
